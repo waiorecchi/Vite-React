@@ -69,14 +69,17 @@
 @media screen and (max-width: 768px) {
   .nav-menu {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 50px;
     left: 0;
     width: 100%;
+    height: calc(100vh - 50px);
     background: #242424;
     flex-direction: column;
     gap: 0;
     border-bottom: 1px solid #333;
+    padding: 2rem 0;
+    overflow-y: auto;
   }
 
   .nav-menu.active {
@@ -86,8 +89,13 @@
   .nav-link {
     width: 100%;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
     border-bottom: 1px solid #333;
+    font-size: 1.2rem;
+  }
+
+  .nav-link:last-child {
+    border-bottom: none;
   }
 
   .menu-icon {
@@ -95,6 +103,7 @@
     position: absolute;
     right: 24px;
     cursor: pointer;
+    z-index: 1000;
   }
 
   .hamburger {

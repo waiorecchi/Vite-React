@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Projects from "./pages/Projects";
 import ComingSoon from "./pages/ComingSoon";
 import Introduction from "./pages/Introduction";
+import Contact from "./pages/Contact";
 
 function Home() {
   const [count, setCount] = useState(0);
@@ -46,6 +47,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/coming-soon" element={<ComingSoon />} />
         <Route path="/introduction" element={<Introduction />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
