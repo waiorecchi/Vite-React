@@ -1,12 +1,83 @@
-# React + Vite
+# Vite + React プロジェクト
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+このプロジェクトは、Vite と React を使用して構築されたウェブアプリケーションです。
 
-Currently, two official plugins are available:
+## 機能
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- モダンなナビゲーションバー
+- レスポンシブデザイン
+- 複数のページルーティング
+  - ホーム
+  - プロジェクト
+  - 紹介
+  - お問い合わせ
+- フッターに著作権表示
 
-## Expanding the ESLint configuration
+## プロジェクト構造
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── components/
+│   ├── Navbar/
+│   │   ├── Navbar.tsx
+│   │   └── Navbar.css
+│   └── Copyright/
+│       ├── Copyright.tsx
+│       └── Copyright.css
+├── pages/
+│   ├── Projects.tsx
+│   ├── Introduction.tsx
+│   ├── Contact.tsx
+│   └── ComingSoon.tsx
+├── App.tsx
+└── App.css
+```
+
+## 使用技術
+
+- TypeScript
+- React
+- Vite
+- React Router DOM
+
+## セットアップ
+
+1. プロジェクトのクローン:
+```bash
+git clone [リポジトリURL]
+```
+
+2. 依存関係のインストール:
+```bash
+npm install
+```
+
+3. 開発サーバーの起動:
+```bash
+npm run dev
+```
+
+## 開発環境
+
+- Node.js
+- npm または yarn
+- エディタ (VSCode推奨)
+
+## コンポーネントの説明
+
+### Copyright コンポーネント
+- 全ページの最下部に固定表示される著作権表示
+- 現在の年を自動的に表示
+- レスポンシブ対応のデザイン
+
+### Navbar コンポーネント
+- レスポンシブなナビゲーションメニュー
+- スムーズな画面遷移
+
+## ライセンス
+
+All Rights Reserved
+
+## 作者
+
+tatsuki kitamura
