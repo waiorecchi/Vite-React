@@ -1,5 +1,5 @@
-import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -11,30 +11,87 @@ import Introduction from "./pages/Introduction";
 import Contact from "./pages/Contact";
 
 function Home() {
-  const [count, setCount] = useState(0);
+  const [activeAccordion, setActiveAccordion] = useState<number | null>(null);
+
+  const toggleAccordion = (index: number) => {
+    setActiveAccordion(activeAccordion === index ? null : index);
+  };
+
+  const statDetails = {
+    experience: [
+      "フロントエンド開発: 1年",
+      "QA,デバック経験: 2年",
+      "バックエンド開発: 0.5年"
+    ],
+    projects: [
+      "Webアプリケーション: 5件",
+      "モバイルアプリ: 3件",
+      "デスクトップアプリ: 2件"
+    ],
+    techStack: [
+      "フロントエンド: React, TypeScript",
+      "バックエンド: Node.js, Python,Express.js",
+      "データベース: MongoDB",
+      "その他: Git, Github, Cursor"
+    ]
+  };
 
   return (
     <div className="main-content">
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="hero-section">
+        <div>
+          <a href="https://vite.dev" target="_blank">
+            <img src={viteLogo} className="logo" alt="Vite logo" />
+          </a>
+          <a href="https://react.dev" target="_blank">
+            <img src={reactLogo} className="logo react" alt="React logo" />
+          </a>
+        </div>
+        <h1>ようこそ！</h1>
+        <p className="subtitle">ポートフォリオサイトへ</p>
+        <div className="hero-description">
+          <p>TypeScriptとReactを愛する開発者です。</p>
+          <p>新しい技術に挑戦し、クリエイティブな解決策を生み出すことを楽しんでいます。</p>
+        </div>
+        <div className="hero-stats">
+          <div className="stat-item" onClick={() => toggleAccordion(0)}>
+            <div className="stat-header">
+              <span className="stat-number">2+</span>
+              <span className="stat-label">年の開発経験</span>
+              <span className={`accordion-icon ${activeAccordion === 0 ? 'active' : ''}`}>▼</span>
+            </div>
+            <div className={`accordion-content ${activeAccordion === 0 ? 'active' : ''}`}>
+              {statDetails.experience.map((item, index) => (
+                <p key={index}>{item}</p>
+              ))}
+            </div>
+          </div>
+          <div className="stat-item" onClick={() => toggleAccordion(1)}>
+            <div className="stat-header">
+              <span className="stat-number">10+</span>
+              <span className="stat-label">プロジェクト</span>
+              <span className={`accordion-icon ${activeAccordion === 1 ? 'active' : ''}`}>▼</span>
+            </div>
+            <div className={`accordion-content ${activeAccordion === 1 ? 'active' : ''}`}>
+              {statDetails.projects.map((item, index) => (
+                <p key={index}>{item}</p>
+              ))}
+            </div>
+          </div>
+          <div className="stat-item" onClick={() => toggleAccordion(2)}>
+            <div className="stat-header">
+              <span className="stat-number">5+</span>
+              <span className="stat-label">技術スタック</span>
+              <span className={`accordion-icon ${activeAccordion === 2 ? 'active' : ''}`}>▼</span>
+            </div>
+            <div className={`accordion-content ${activeAccordion === 2 ? 'active' : ''}`}>
+              {statDetails.techStack.map((item, index) => (
+                <p key={index}>{item}</p>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
   );
 }

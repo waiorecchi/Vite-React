@@ -3,6 +3,13 @@ import "./Projects.css";
 function Projects() {
   const projects = [
     {
+      title: "Vite-React",
+      description: "ViteとReactを使用したモダンなウェブアプリケーション",
+      technologies: ["TypeScript", "React", "Vite", "React Router DOM"],
+      details: "モダンなナビゲーションバー、レスポンシブデザイン、複数ページのルーティング機能を備えたウェブアプリケーション",
+      githubLink: "https://github.com/waiorecchi/Vite-React",
+    },
+    {
       title: "MACRO-krunker",
       description: "Krunker.ioのためのPythonマクロプロジェクト",
       technologies: ["Python"],
