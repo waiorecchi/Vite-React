@@ -4,6 +4,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
+import Copyright from "./components/Copyright";
 import Projects from "./pages/Projects";
 import ComingSoon from "./pages/ComingSoon";
 import Introduction from "./pages/Introduction";
@@ -49,6 +50,7 @@ function App() {
         <Route path="/introduction" element={<Introduction />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Copyright />
     </Router>
   );
 }

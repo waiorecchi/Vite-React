@@ -1,0 +1,3 @@
+npm install eslint eslint-plugin-react @typescript-eslint/eslint-plugin @typescript-eslint/parser --save-dev
+
+npm install prettier eslint-config-prettier eslint-plugin-prettier --save-dev

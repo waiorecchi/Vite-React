@@ -8,7 +8,7 @@ function Contact() {
     message: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e:any) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -16,7 +16,7 @@ function Contact() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     console.log("送信されたデータ:", formData);
     alert("お問い合わせありがとうございます！");
@@ -67,7 +67,7 @@ function Contact() {
               onChange={handleChange}
               required
               placeholder="お問い合わせ内容を入力してください"
-              rows="5"
+              rows={5}
             />
           </div>
 
