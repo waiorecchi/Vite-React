@@ -101,11 +101,11 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/coming-soon" element={<ComingSoon />} />
-        <Route path="/introduction" element={<Introduction />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/Vite-React/" element={<Home />} />
+        <Route path="/Vite-React/projects" element={<Projects />} />
+        <Route path="/Vite-React/coming-soon" element={<ComingSoon />} />
+        <Route path="/Vite-React/introduction" element={<Introduction />} />
+        <Route path="/Vite-React/contact" element={<Contact />} />
       </Routes>
       <Copyright />
     </Router>
