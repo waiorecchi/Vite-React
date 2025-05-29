@@ -10,35 +10,35 @@ function Navbar() {
       <div className="navbar-container">
         <div className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
           <Link
-            to="/"
+            to="/Vite-React/"
             className="nav-link"
             onClick={() => setIsMenuOpen(false)}
           >
             ホーム
           </Link>
           <Link
-            to="/introduction"
+            to="/Vite-React/introduction"
             className="nav-link"
             onClick={() => setIsMenuOpen(false)}
           >
             Introduction
           </Link>
           <Link
-            to="/projects"
+            to="/Vite-React/projects"
             className="nav-link"
             onClick={() => setIsMenuOpen(false)}
           >
             Projects
           </Link>
           <Link
-            to="/coming-soon"
+            to="/Vite-React/coming-soon"
             className="nav-link"
             onClick={() => setIsMenuOpen(false)}
           >
             Coming Soon
           </Link>
           <Link
-            to="/contact"
+            to="/Vite-React/contact"
             className="nav-link"
             onClick={() => setIsMenuOpen(false)}
           >

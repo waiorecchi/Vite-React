@@ -1,12 +1,75 @@
-# React + Vite
+# ポートフォリオサイト
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## プロジェクト概要
+TypeScriptとReactを使用した、モダンでインタラクティブなポートフォリオサイトです。レスポンシブデザインを採用し、様々なデバイスで最適な表示を実現しています。
 
-Currently, two official plugins are available:
+## 技術スタック
+- **フロントエンド**
+  - TypeScript
+  - React
+  - Vite
+  - React Router DOM
+- **スタイリング**
+  - CSS3
+  - アニメーション
+  - レスポンシブデザイン
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 主な機能と実装ポイント
 
-## Expanding the ESLint configuration
+### 1. モダンなUI/UXデザイン
+- アニメーションを活用したインタラクティブな要素
+- ダークテーマを基調とした洗練されたデザイン
+- スムーズな遷移アニメーション
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2. レスポンシブ対応
+- モバイルファーストのアプローチ
+- フレキシブルなグリッドレイアウト
+- デバイスに応じた最適な表示
+
+### 3. パフォーマンス最適化
+- Viteによる高速な開発環境
+- コンポーネントの最適化
+- 効率的なコード分割
+
+### 4. コード品質
+- TypeScriptによる型安全性の確保
+- コンポーネントの再利用性を考慮した設計
+- クリーンで保守性の高いコード
+
+## 開発で学んだこと
+
+### 技術面
+- TypeScriptとReactの実践的な活用
+- モダンなフロントエンド開発手法
+- パフォーマンス最適化の手法
+
+### プロジェクト管理
+- 効率的な開発環境の構築
+- コードの品質管理
+- バージョン管理の重要性
+
+## 今後の展望
+- バックエンド機能の追加
+- パフォーマンスのさらなる最適化
+- アクセシビリティの向上
+- 多言語対応
+
+## 開発環境のセットアップ
+```bash
+# リポジトリのクローン
+git clone https://github.com/yourusername/portfolio-site.git
+
+# 依存関係のインストール
+npm install
+
+# 開発サーバーの起動
+npm run dev
+```
+
+## ビルド方法
+```bash
+npm run build
+```
+
+## ライセンス
+MIT License

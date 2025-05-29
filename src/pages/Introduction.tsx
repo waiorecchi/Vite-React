@@ -13,7 +13,7 @@ const techStack = {
 };
 
 function Introduction() {
-  const [text, setText] = useState({
+  const [text] = useState({
     title: "自己紹介",
     content: `<section-heading>WHO?</section-heading>
     北村 健紀 (Kitamura Tatsuki) 🌟  
@@ -165,7 +165,7 @@ function Introduction() {
     });
   }, []);
 
-  const getParagraphClass = (text) => {
+  const getParagraphClass = (text:string) => {
     if (text.includes("<section-heading>")) return "";
     if (text.trim().startsWith("-")) return "list-item";
     if (text.trim().startsWith(">")) return "quote";
@@ -173,12 +173,12 @@ function Introduction() {
     return "paragraph";
   };
 
-  const processContent = (content) => {
+  const processContent = (content:string) => {
     const sections = content.split(/<section-heading>.*?<\/section-heading>/);
     const headings =
       content.match(/<section-heading>(.*?)<\/section-heading>/g) || [];
 
-    const result = [];
+    const result:string[] = [];
     sections.forEach((section, index) => {
       if (section.trim()) {
         const paragraphs = section.split(/\n\s*\n/);
