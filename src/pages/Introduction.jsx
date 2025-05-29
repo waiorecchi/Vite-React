@@ -5,6 +5,13 @@ import "./Introduction.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const techStack = {
+  languages: ["HTML/CSS", "JavaScript", "Python"],
+  frameworks: ["Express.js", "Node.js", "Next.js/Nuxt.js", "Vite-React"],
+  tools: ["VS Code", "Cursor", "Git/GitHub"],
+  competitive: ["AtCoder"]
+};
+
 function Introduction() {
   const [text, setText] = useState({
     title: "自己紹介",
@@ -198,6 +205,48 @@ function Introduction() {
             const heading = paragraph
               .replace("<section-heading>", "")
               .replace("</section-heading>", "");
+            
+            if (heading === "技術スタック") {
+              return (
+                <div key={index}>
+                  <h2 className="section-heading">{heading}</h2>
+                  <div className="tech-stack">
+                    <div className="tech-category">
+                      <h3>言語</h3>
+                      <div className="tech-list">
+                        {techStack.languages.map((tech, i) => (
+                          <span key={i} className="tech-item">{tech}</span>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="tech-category">
+                      <h3>フレームワーク/ライブラリ</h3>
+                      <div className="tech-list">
+                        {techStack.frameworks.map((tech, i) => (
+                          <span key={i} className="tech-item">{tech}</span>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="tech-category">
+                      <h3>ツール</h3>
+                      <div className="tech-list">
+                        {techStack.tools.map((tech, i) => (
+                          <span key={i} className="tech-item">{tech}</span>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="tech-category">
+                      <h3>競技プログラミング</h3>
+                      <div className="tech-list">
+                        {techStack.competitive.map((tech, i) => (
+                          <span key={i} className="tech-item">{tech}</span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            }
             return (
               <h2
                 key={index}

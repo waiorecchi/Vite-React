@@ -19,6 +19,7 @@
   width: 100%;
   max-width: 1200px;
   padding: 0 24px;
+  position: relative;
 }
 
 .navbar-logo {
@@ -72,6 +73,7 @@
     position: fixed;
     top: 50px;
     left: 0;
+    right: 0;
     width: 100%;
     height: calc(100vh - 50px);
     background: #242424;
@@ -80,6 +82,7 @@
     border-bottom: 1px solid #333;
     padding: 2rem 0;
     overflow-y: auto;
+    margin: 0;
   }
 
   .nav-menu.active {
@@ -92,6 +95,7 @@
     padding: 1.5rem;
     border-bottom: 1px solid #333;
     font-size: 1.2rem;
+    margin: 0;
   }
 
   .nav-link:last-child {
