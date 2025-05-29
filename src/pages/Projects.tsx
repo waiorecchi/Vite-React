@@ -3,6 +3,13 @@ import "./Projects.css";
 function Projects() {
   const projects = [
     {
+      title: "AtCoder",
+      description: "競技プログラミングの解答コードとチートシート",
+      technologies: ["Python"],
+      details: "AtCoderのコンテスト問題の解答コードと、便利なチートシートを管理するリポジトリ",
+      githubLink: "https://github.com/waiorecchi/Atcoder",
+    },
+    {
       title: "Vite-React",
       description: "ViteとReactを使用したモダンなウェブアプリケーション",
       technologies: ["TypeScript", "React", "Vite", "React Router DOM"],
@@ -14,14 +21,14 @@ function Projects() {
       description: "Krunker.ioのためのPythonマクロプロジェクト",
       technologies: ["Python"],
       details: "Krunker.ioゲームの自動化と最適化のためのマクロツール",
-      githubLink: "https://github.com/yourusername/macro-krunker",
+      githubLink: "https://github.com/waiorecchi/macro-krunker",
     },
     {
       title: "Personal Website",
       technologies: ["HTML", "CSS", "JavaScript"],
       details:
         "モダンなデザインとインタラクティブな要素を備えたパーソナルウェブサイト",
-      githubLink: "https://github.com/yourusername/personal-website",
+      githubLink: "https://github.com/waiorecchi/waiorecchi.github.io",
     },
     {
       title: "STUDY-ENGLISH-ON-WALLPAPER",
@@ -29,7 +36,7 @@ function Projects() {
       technologies: ["Python", "Batchfile", "VBScript"],
       details:
         "デスクトップの壁紙に英語の名言やフレーズを表示し、日常的に英語に触れる機会を作るツール",
-      githubLink: "https://github.com/yourusername/study-english-on-wallpaper",
+      githubLink: "https://github.com/waiorecchi/study-english-on-wallpaper",
     },
   ];
 

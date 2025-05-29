@@ -60,10 +60,11 @@
 .hero-section h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
-  background: linear-gradient(45deg, #646cff, #535bf2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff;
   animation: fadeIn 1s ease-in;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  letter-spacing: 0.1em;
+  font-weight: 700;
 }
 
 .subtitle {
@@ -83,6 +84,63 @@
 .hero-description p {
   margin: 1rem 0;
   color: #ffffff;
+}
+
+.page-guides {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0;
+  animation: fadeIn 1s ease-in 0.6s backwards;
+}
+
+.guide-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 250px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.guide-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.guide-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.guide-item h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.guide-item p {
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .page-guides {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .guide-item {
+    width: 100%;
+    max-width: 300px;
+  }
 }
 
 .hero-stats {
@@ -170,22 +228,5 @@
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-section h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-stats {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .stat-item {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
   }
 }

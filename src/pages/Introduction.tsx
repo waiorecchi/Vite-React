@@ -26,25 +26,6 @@ function Introduction() {
     🎨 ポートフォリオ: [Projectリンク]  
 
 <section-heading>技術スタック</section-heading> 
- 
-言語:  
-- HTML/CSS 🌈  
-- JavaScript 🚀  
-- Python 🐍  
-
-フレームワーク/ライブラリ:  
-- Express.js (学習中) 📚  
-- Node.js (勉強中) 🧠  
-- Next.js/Nuxt.js (興味あり) 🔥  
-- Vite-React (現在開発中!) 💫  
-
-ツール:  
-- VS Code 💙  
-- Cursor (最近ハマってます！) 🖱️  
-- Git/GitHub 🐙  
-
-競技プログラミング:  
-- AtCoderでアルゴリズム学習中 🏆  
 
 
 <section-heading>技術への取り組み</section-heading>  

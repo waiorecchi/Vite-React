@@ -11,6 +11,7 @@
   margin-bottom: 3rem;
   text-align: center;
   background: linear-gradient(45deg, #ffffff, #e0e0e0);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: fadeIn 1s ease-out;

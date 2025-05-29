@@ -36,6 +36,24 @@ function Home() {
     ]
   };
 
+  const pageGuides = [
+    {
+      title: "自己紹介",
+      description: "私の経歴、スキル、興味について詳しく紹介しています。",
+      icon: "👨‍💻"
+    },
+    {
+      title: "プロジェクト",
+      description: "これまでに手がけた様々なプロジェクトの一覧です。",
+      icon: "🚀"
+    },
+    {
+      title: "お問い合わせ",
+      description: "ご質問やお問い合わせはこちらからお気軽にどうぞ。",
+      icon: "📬"
+    }
+  ];
+
   return (
     <div className="main-content">
       <div className="hero-section">
@@ -52,6 +70,15 @@ function Home() {
         <div className="hero-description">
           <p>TypeScriptとReactを愛する開発者です。</p>
           <p>新しい技術に挑戦し、クリエイティブな解決策を生み出すことを楽しんでいます。</p>
+        </div>
+        <div className="page-guides">
+          {pageGuides.map((guide, index) => (
+            <div key={index} className="guide-item">
+              <span className="guide-icon">{guide.icon}</span>
+              <h3>{guide.title}</h3>
+              <p>{guide.description}</p>
+            </div>
+          ))}
         </div>
         <div className="hero-stats">
           <div className="stat-item" onClick={() => toggleAccordion(0)}>
