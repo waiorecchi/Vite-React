@@ -57,7 +57,7 @@ TypeScriptとReactを使用した、モダンでインタラクティブなポ�
 ## 開発環境のセットアップ
 ```bash
 # リポジトリのクローン
-git clone https://github.com/yourusername/portfolio-site.git
+git clone https://github.com/waiorecchi/Vite-React.git
 
 # 依存関係のインストール
 npm install
